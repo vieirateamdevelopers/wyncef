@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include layout="@layout/adapter_toolbar" />
+
+    <include layout="@layout/adapter_main_content" />
+
+    <FrameLayout
+        android:id="@+id/frame_layout_fab_menu"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="invisible"
+        android:elevation="@dimen/elevation_fab_button"
+        android:background="@color/colorFabLayout"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"/>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/floating_button_import"
+        android:layout_width="@dimen/floating_button_scan"
+        android:layout_height="@dimen/floating_button_scan"
+        android:src="@drawable/ic_drawable_import"
+        android:visibility="invisible"
+        app:layout_anchor="@id/floating_button"
+        app:layout_anchorGravity="center"
+        app:fabCustomSize="@dimen/floating_button_scan" />
+
+    <TextView
+        android:id="@+id/text_view_button_import"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="invisible"
+        android:layout_gravity="start|center"
+        android:text="@string/fab_menu_import"
+        android:elevation="@dimen/elevation_fab_button"
+        android:textColor="@color/colorSecondaryDay"
+        android:padding="@dimen/layout_margin_min"
+        app:layout_anchor="@id/floating_button_import"
+        app:layout_anchorGravity="start|center" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/floating_button_export"
+        android:layout_width="@dimen/floating_button_scan"
+        android:layout_height="@dimen/floating_button_scan"
+        android:src="@drawable/ic_drawable_export"
+        android:visibility="invisible"
+        app:layout_anchor="@id/floating_button"
+        app:layout_anchorGravity="center"
+        app:fabCustomSize="@dimen/floating_button_scan" />
+
+    <TextView
+        android:id="@+id/text_view_button_export"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="invisible"
+        android:layout_gravity="start|center"
+        android:text="@string/fab_menu_export"
+        android:elevation="@dimen/elevation_fab_button"
+        android:textColor="@color/colorSecondaryDay"
+        android:padding="@dimen/layout_margin_min"
+        app:layout_anchor="@id/floating_button_export"
+        app:layout_anchorGravity="start|center" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/floating_button_scan"
+        android:layout_width="@dimen/floating_button_scan"
+        android:layout_height="@dimen/floating_button_scan"
+        android:visibility="invisible"
+        android:src="@drawable/ic_drawable_scan"
+        app:layout_anchor="@id/floating_button"
+        app:layout_anchorGravity="center"
+        app:fabCustomSize="@dimen/floating_button_scan" />
+
+    <TextView
+        android:id="@+id/text_view_button_scan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="start|center"
+        android:text="@string/fab_menu_scan"
+        android:visibility="invisible"
+        android:textColor="@color/colorSecondaryDay"
+        android:elevation="@dimen/elevation_fab_button"
+        android:padding="@dimen/layout_margin_min"
+        app:layout_anchor="@id/floating_button_scan"
+        app:layout_anchorGravity="start|center" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/floating_button_device"
+        android:layout_width="@dimen/floating_button_scan"
+        android:layout_height="@dimen/floating_button_scan"
+        android:src="@drawable/ic_drawable_device"
+        android:visibility="invisible"
+        app:layout_anchor="@id/floating_button"
+        app:layout_anchorGravity="center"
+        app:fabCustomSize="@dimen/floating_button_scan" />
+
+    <TextView
+        android:id="@+id/text_view_button_device"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="invisible"
+        android:layout_gravity="start|center"
+        android:text="@string/fab_menu_device"
+        android:elevation="@dimen/elevation_fab_button"
+        android:textColor="@color/colorSecondaryDay"
+        android:padding="@dimen/layout_margin_min"
+        app:layout_anchor="@id/floating_button_device"
+        app:layout_anchorGravity="start|center" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/floating_button"
+        android:layout_width="@dimen/floating_button_max"
+        android:layout_height="@dimen/floating_button_max"
+        android:layout_gravity="bottom|end"
+        android:layout_margin="@dimen/layout_margin_max"
+        android:src="@drawable/ic_drawable_add"
+        app:fabCustomSize="@dimen/floating_button_max" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/floating_button_feedback"
+        android:layout_width="@dimen/floating_button_max"
+        android:layout_height="@dimen/floating_button_max"
+        android:layout_gravity="bottom|end"
+        android:layout_margin="@dimen/layout_margin_max"
+        android:src="@drawable/ic_drawable_feedback"
+        android:visibility="invisible"
+        app:fabCustomSize="@dimen/floating_button_max" />
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

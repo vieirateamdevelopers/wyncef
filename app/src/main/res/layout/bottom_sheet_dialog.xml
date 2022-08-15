@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/linear_layout_dialog"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="?attr/backgroundColor">
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="@dimen/layout_margin_max"
+            android:orientation="vertical"
+            android:background="?attr/backgroundColor">
+
+        <TextView
+                android:id="@+id/text_view_dialog_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/layout_margin_max"
+                android:text="@string/app_name"
+                android:textAlignment="center"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                android:textColor="?attr/textViewColor"
+                android:textSize="@dimen/text_title_max" />
+
+        <TextView
+                android:id="@+id/text_view_dialog_body"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/layout_margin_max"
+                android:layout_marginBottom="@dimen/layout_margin_max"
+                android:text="@string/app_name"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                android:textColor="?attr/textViewColor"
+                android:textSize="@dimen/text_title_min" />
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+            <Button
+                    android:id="@+id/button_negative"
+                    android:layout_width="@dimen/bottom_sheet_button_size"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/layout_margin_min"
+                    android:background="@drawable/ic_drawable_buttons"
+                    android:text="@string/menu_no"
+                    android:textAllCaps="false"
+                    android:textColor="@color/colorAccentDay"
+                    android:textSize="@dimen/text_title_min" />
+
+            <Button
+                    android:id="@+id/button_positive"
+                    android:layout_width="@dimen/bottom_sheet_button_size"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/layout_margin_min"
+                    android:background="@drawable/ic_drawable_buttons"
+                    android:text="@string/menu_yes"
+                    android:textAllCaps="false"
+                    android:textColor="@color/colorAccentDay"
+                    android:textSize="@dimen/text_title_min" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

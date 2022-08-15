@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.circularreveal.cardview.CircularRevealCardView xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="@dimen/image_view_icon_size"
+        android:layout_height="@dimen/image_view_icon_size"
+        android:layout_margin="@dimen/layout_padding_min"
+        app:cardBackgroundColor="?attr/cardViewColor"
+        app:cardCornerRadius="@dimen/corner_radius_max"
+        app:cardElevation="@dimen/elevation_card_view">
+
+    <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="?attr/cardViewColor"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:padding="@dimen/layout_padding_max">
+
+        <ImageView
+                android:id="@+id/image_view_icon2"
+                android:layout_width="@dimen/nav_header_image_size"
+                android:layout_height="@dimen/nav_header_image_size"
+                android:contentDescription="@string/app_device"
+                android:src="@drawable/ic_drawable_device"
+                android:tint="?attr/iconColor" />
+
+        <TextView
+                android:id="@+id/text_view_icon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/app_device"
+                android:textAlignment="center"
+                android:textColor="?attr/textViewColor"
+                android:textSize="@dimen/text_body_min" />
+
+    </LinearLayout>
+
+</com.google.android.material.circularreveal.cardview.CircularRevealCardView>

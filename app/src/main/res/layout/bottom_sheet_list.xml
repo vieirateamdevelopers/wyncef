@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/linear_layout_list"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="?attr/backgroundColor"
+    android:orientation="vertical">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="?attr/foregroundColor"
+        android:padding="@dimen/layout_padding_max">
+
+        <ImageView
+            android:id="@+id/image_view_back_list"
+            android:layout_width="@dimen/bottom_sheet_image_size"
+            android:layout_height="@dimen/bottom_sheet_image_size"
+            android:layout_marginStart="@dimen/layout_margin_min"
+            android:contentDescription="@string/menu_cancel"
+            android:src="@drawable/ic_drawable_back"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/text_view_list"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/layout_margin_max"
+            android:text="@string/app_name"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+            android:textColor="@color/colorSecondaryDay"
+            android:textSize="@dimen/text_title_min"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/image_view_search_list"
+            app:layout_constraintStart_toEndOf="@+id/image_view_back_list"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/text_iput_edit_text_list"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginStart="@dimen/layout_margin_max"
+            android:hint="@string/menu_search"
+            android:inputType="text"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+            android:textColor="@color/colorSecondaryDay"
+            android:textColorHint="@color/colorHintDay"
+            android:textSize="@dimen/text_title_min"
+            android:visibility="invisible"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/image_view_search_list"
+            app:layout_constraintStart_toEndOf="@+id/image_view_back_list"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/image_view_search_list"
+            android:layout_width="@dimen/bottom_sheet_image_size"
+            android:layout_height="@dimen/bottom_sheet_image_size"
+            android:layout_marginEnd="@dimen/layout_margin_max"
+            android:contentDescription="@string/menu_search"
+            android:src="@drawable/ic_drawable_search"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/image_view_add_list"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/image_view_add_list"
+            android:layout_width="@dimen/bottom_sheet_image_size"
+            android:layout_height="@dimen/bottom_sheet_image_size"
+            android:layout_marginEnd="@dimen/layout_margin_min"
+            android:contentDescription="@string/menu_add"
+            android:src="@drawable/ic_drawable_add"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycler_view_bottom_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:listitem="@layout/adapter_card_view" />
+
+</LinearLayout>

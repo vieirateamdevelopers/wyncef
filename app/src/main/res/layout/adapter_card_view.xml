@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.circularreveal.cardview.CircularRevealCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/layout_padding_min"
+    app:cardBackgroundColor="?attr/cardViewColor"
+    app:cardCornerRadius="@dimen/corner_radius_max"
+    app:cardElevation="@dimen/elevation_card_view">
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/floating_button_mini"
+        android:layout_width="@dimen/floating_button_min"
+        android:layout_height="@dimen/floating_button_min"
+        android:layout_gravity="end"
+        android:layout_margin="@dimen/layout_margin_min"
+        android:elevation="@dimen/elevation_fab_button"
+        android:src="@drawable/ic_drawable_check"
+        android:visibility="invisible"
+        app:fabCustomSize="@dimen/floating_button_min" />
+
+    <ImageView
+        android:id="@+id/image_view_tag"
+        android:layout_width="@dimen/floating_button_min"
+        android:layout_height="@dimen/floating_button_min"
+        android:layout_gravity="end|bottom"
+        android:contentDescription="@string/menu_tag"
+        android:layout_margin="@dimen/layout_margin_min"
+        android:elevation="@dimen/elevation_fab_button"
+        android:src="@drawable/ic_drawable_device_printer"
+        android:visibility="invisible"
+        app:fabCustomSize="@dimen/floating_button_min" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?attr/cardViewColor"
+        android:orientation="vertical"
+        android:padding="@dimen/layout_padding_max">
+
+        <ImageView
+            android:id="@+id/image_view"
+            android:layout_width="@dimen/nav_header_image_size"
+            android:layout_height="@dimen/nav_header_image_size"
+            android:contentDescription="@string/app_name"
+            android:src="@drawable/ic_drawable_inventory"
+            android:tint="?attr/iconColor" />
+
+        <TextView
+            android:id="@+id/text_view_1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/layout_padding_max"
+            android:text="@string/app_name"
+            android:textColor="?attr/textViewColor"
+            android:textSize="@dimen/text_title_min"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/text_view_2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/layout_padding_max"
+            android:text="@string/app_name"
+            android:textColor="?attr/textViewColor"
+            android:textSize="@dimen/text_body_min" />
+
+        <TextView
+            android:id="@+id/text_view_3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/layout_padding_max"
+            android:text="@string/app_name"
+            android:textColor="?attr/textViewColor"
+            android:textSize="@dimen/text_body_min" />
+
+    </LinearLayout>
+
+</com.google.android.material.circularreveal.cardview.CircularRevealCardView>

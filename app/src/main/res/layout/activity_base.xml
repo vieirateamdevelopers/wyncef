@@ -1,0 +1,272 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/linear_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="?attr/backgroundColor"
+        android:orientation="vertical"
+        tools:context=".activity.BaseActivity">
+
+    <include layout="@layout/adapter_toolbar" />
+
+    <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="?attr/backgroundColor">
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+            <com.google.android.material.circularreveal.cardview.CircularRevealCardView
+                    android:id="@+id/card_view_1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/layout_margin_min"
+                    app:cardBackgroundColor="?attr/cardViewColor"
+                    app:cardElevation="@dimen/elevation_card_view">
+
+                <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/layout_margin_max"
+                        android:orientation="vertical">
+
+                    <TextView
+                            android:id="@+id/text_view_title_1"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/app_name"
+                            android:textColor="?attr/textViewColor"
+                            android:textSize="@dimen/text_title_max"
+                            android:textStyle="bold" />
+
+                    <TextView
+                            android:id="@+id/text_view_body_1"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/text_view_touch"
+                            android:textColor="?attr/textViewColor"
+                            android:textSize="@dimen/text_title_min" />
+
+                </LinearLayout>
+
+            </com.google.android.material.circularreveal.cardview.CircularRevealCardView>
+
+            <com.google.android.material.circularreveal.cardview.CircularRevealCardView
+                    android:id="@+id/card_view_2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/layout_margin_min"
+                    app:cardBackgroundColor="?attr/cardViewColor"
+                    app:cardElevation="@dimen/elevation_card_view">
+
+                <ImageView
+                    android:id="@+id/image_view_icon1"
+                    android:layout_width="@dimen/floating_button_max"
+                    android:layout_height="@dimen/floating_button_max"
+                    android:layout_gravity="center|end"
+                    android:layout_marginEnd="@dimen/layout_margin_max"
+                    android:contentDescription="@string/app_name"
+                    android:src="@drawable/ic_drawable_device_other"
+                    android:tint="?attr/iconColor"
+                    android:visibility="invisible" />
+
+                <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/layout_margin_max"
+                        android:orientation="vertical">
+
+                    <TextView
+                            android:id="@+id/text_view_title_2"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/app_name"
+                            android:textColor="?attr/textViewColor"
+                            android:textSize="@dimen/text_title_max"
+                            android:textStyle="bold" />
+
+                    <TextView
+                            android:id="@+id/text_view_body_2"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/text_view_touch"
+                            android:textColor="?attr/textViewColor"
+                            android:textSize="@dimen/text_title_min" />
+
+                </LinearLayout>
+
+            </com.google.android.material.circularreveal.cardview.CircularRevealCardView>
+
+            <com.google.android.material.circularreveal.cardview.CircularRevealCardView
+                    android:id="@+id/card_view_3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/layout_margin_min"
+                    app:cardBackgroundColor="?attr/cardViewColor"
+                    app:cardElevation="@dimen/elevation_card_view">
+
+                <ImageView
+                        android:id="@+id/image_view_icon2"
+                        android:layout_width="@dimen/floating_button_max"
+                        android:layout_height="@dimen/floating_button_max"
+                        android:layout_gravity="center|end"
+                        android:layout_marginEnd="@dimen/layout_margin_max"
+                        android:contentDescription="@string/app_name"
+                        android:src="@drawable/ic_drawable_device_other"
+                        android:tint="?attr/iconColor"
+                        android:visibility="invisible" />
+
+                <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/layout_margin_max"
+                        android:orientation="vertical">
+
+                    <TextView
+                            android:id="@+id/text_view_title_3"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/app_name"
+                            android:textColor="?attr/textViewColor"
+                            android:textSize="@dimen/text_title_max"
+                            android:textStyle="bold" />
+
+                    <TextView
+                            android:id="@+id/text_view_body_3"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/text_view_touch"
+                            android:textColor="?attr/textViewColor"
+                            android:textSize="@dimen/text_title_min" />
+
+                </LinearLayout>
+
+            </com.google.android.material.circularreveal.cardview.CircularRevealCardView>
+
+            <com.google.android.material.circularreveal.cardview.CircularRevealCardView
+                    android:id="@+id/card_view_4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/layout_margin_min"
+                    app:cardBackgroundColor="?attr/cardViewColor"
+                    app:cardElevation="@dimen/elevation_card_view">
+
+                <ImageView
+                    android:id="@+id/image_view_icon3"
+                    android:layout_width="@dimen/floating_button_max"
+                    android:layout_height="@dimen/floating_button_max"
+                    android:layout_gravity="center|end"
+                    android:layout_marginEnd="@dimen/layout_margin_max"
+                    android:contentDescription="@string/app_name"
+                    android:src="@drawable/ic_drawable_device_other"
+                    android:tint="?attr/iconColor"
+                    android:visibility="invisible" />
+
+                <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/layout_margin_max"
+                        android:orientation="vertical">
+
+                    <TextView
+                            android:id="@+id/text_view_title_4"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/app_name"
+                            android:textColor="?attr/textViewColor"
+                            android:textSize="@dimen/text_title_max"
+                            android:textStyle="bold" />
+
+                    <TextView
+                            android:id="@+id/text_view_body_4"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/text_view_touch"
+                            android:textColor="?attr/textViewColor"
+                            android:textSize="@dimen/text_title_min" />
+
+                </LinearLayout>
+
+            </com.google.android.material.circularreveal.cardview.CircularRevealCardView>
+
+
+            <com.google.android.material.circularreveal.cardview.CircularRevealCardView
+                    android:id="@+id/card_view_5"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/layout_margin_min"
+                    app:cardBackgroundColor="?attr/cardViewColor"
+                    app:cardElevation="@dimen/elevation_card_view">
+
+                <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/layout_margin_max"
+                        android:orientation="vertical">
+
+                    <TextView
+                            android:id="@+id/text_view_title_5"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/app_name"
+                            android:textColor="?attr/textViewColor"
+                            android:textSize="@dimen/text_title_max"
+                            android:textStyle="bold" />
+
+                    <TextView
+                            android:id="@+id/text_view_body_5"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/text_view_touch"
+                            android:textColor="?attr/textViewColor"
+                            android:textSize="@dimen/text_title_min" />
+
+                </LinearLayout>
+
+            </com.google.android.material.circularreveal.cardview.CircularRevealCardView>
+
+            <com.google.android.material.circularreveal.cardview.CircularRevealCardView
+                    android:id="@+id/card_view_6"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/layout_margin_min"
+                    app:cardBackgroundColor="?attr/cardViewColor"
+                    app:cardElevation="@dimen/elevation_card_view">
+
+                <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/layout_margin_max"
+                        android:orientation="vertical">
+
+                    <TextView
+                            android:id="@+id/text_view_title_6"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/app_name"
+                            android:textColor="?attr/textViewColor"
+                            android:textSize="@dimen/text_title_max"
+                            android:textStyle="bold" />
+
+                    <TextView
+                            android:id="@+id/text_view_body_6"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/text_view_touch"
+                            android:textColor="?attr/textViewColor"
+                            android:textSize="@dimen/text_title_min" />
+
+                </LinearLayout>
+
+            </com.google.android.material.circularreveal.cardview.CircularRevealCardView>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

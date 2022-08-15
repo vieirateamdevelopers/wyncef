@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--default margins-->
+    <dimen name="layout_margin_max">16dp</dimen>
+    <dimen name="layout_margin_min">8dp</dimen>
+    <dimen name="layout_padding_max">6dp</dimen>
+    <dimen name="layout_padding_min">3dp</dimen>
+    <dimen name="layout_menu_fab_margin">5dp</dimen>
+
+    <!--default corners-->
+    <dimen name="corner_radius_max">20dp</dimen>
+    <dimen name="corner_radius_min">10dp</dimen>
+
+    <!--default buttons-->
+    <dimen name="nav_header_height">160dp</dimen>
+    <dimen name="nav_header_image_size">60dp</dimen>
+    <dimen name="image_view_icon_size">115dp</dimen>
+    <dimen name="bottom_sheet_spinner">40dp</dimen>
+    <dimen name="bottom_sheet_image_size">24dp</dimen>
+    <dimen name="bottom_sheet_button_size">150dp</dimen>
+    <dimen name="floating_button_scan">46dp</dimen>
+    <dimen name="floating_button_max">55dp</dimen>
+    <dimen name="floating_button_min">25dp</dimen>
+
+    <!--default elevations-->
+    <dimen name="elevation_button">2dp</dimen>
+    <dimen name="elevation_dialog">24dp</dimen>
+    <dimen name="elevation_app_bar">4dp</dimen>
+    <dimen name="elevation_card_view">8dp</dimen>
+    <dimen name="elevation_fab_button">6dp</dimen>
+    <dimen name="elevation_nav_drawer">16dp</dimen>
+
+    <!--default text size-->
+    <dimen name="text_title_max">20sp</dimen>
+    <dimen name="text_title_min">18sp</dimen>
+    <dimen name="text_body_max">16sp</dimen>
+    <dimen name="text_body_min">14sp</dimen>
+</resources>

@@ -1,0 +1,94 @@
+<resources>
+
+    <style name="IntroTheme" parent="Theme.AppCompat.NoActionBar">
+        <item name="android:windowFullscreen">true</item>
+    </style>
+
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="colorPrimary">@color/colorPrimaryDay</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDarkDay</item>
+        <item name="colorAccent">@color/colorAccentDay</item>
+        <item name="backgroundColor">@color/colorSecondaryDay</item>
+        <item name="foregroundColor">@color/colorPrimaryDay</item>
+        <item name="cardViewColor">@color/colorCardViewDay</item>
+        <item name="textViewColor">@color/colorIconDay</item>
+        <item name="textHintColor">@color/colorHintDay</item>
+        <item name="iconColor">@color/colorIconDay</item>
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <item name="windowActionModeOverlay">true</item>
+        <item name="actionModeStyle">@style/ActionMode</item>
+        <item name="android:actionModeStyle">@style/ActionMode</item>
+        <item name="android:spinnerDropDownItemStyle">@style/SpinnerDay</item>
+        <item name="android:windowAnimationStyle">@style/Animation.MyCustomAnimation</item>
+    </style>
+
+    <style name="DarkTheme" parent="Theme.AppCompat.DayNight.DarkActionBar">
+        <item name="colorPrimary">@color/colorPrimaryNight</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDarkNight</item>
+        <item name="colorAccent">@color/colorAccentNight</item>
+        <item name="backgroundColor">@color/colorSecondaryNight</item>
+        <item name="foregroundColor">@color/colorPrimaryNight</item>
+        <item name="cardViewColor">@color/colorCardViewNight</item>
+        <item name="textViewColor">@color/colorIconNight</item>
+        <item name="textHintColor">@color/colorHintNight</item>
+        <item name="iconColor">@color/colorIconNight</item>
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <item name="windowActionModeOverlay">true</item>
+        <item name="actionModeStyle">@style/ActionModeDark</item>
+        <item name="android:actionModeStyle">@style/ActionModeDark</item>
+        <item name="android:spinnerDropDownItemStyle">@style/SpinnerNight</item>
+        <item name="android:windowAnimationStyle">@style/Animation.MyCustomAnimation</item>
+    </style>
+
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <item name="windowActionModeOverlay">true</item>
+        <item name="actionModeStyle">@style/ActionMode</item>
+        <item name="android:actionModeStyle">@style/ActionMode</item>
+    </style>
+
+    <style name="DarkTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <item name="windowActionModeOverlay">true</item>
+        <item name="actionModeStyle">@style/ActionModeDark</item>
+        <item name="android:actionModeStyle">@style/ActionModeDark</item>
+    </style>
+
+    <style name="ActionMode" parent="Widget.AppCompat.ActionMode">
+        <item name="android:background">@color/colorPrimaryDay</item>
+        <item name="background">@color/colorPrimaryDay</item>
+        <item name="colorPrimaryDark">@color/colorAccentDay</item>
+    </style>
+
+    <style name="ActionModeDark" parent="Widget.AppCompat.ActionMode">
+        <item name="android:background">@color/colorPrimaryNight</item>
+        <item name="background">@color/colorPrimaryNight</item>
+        <item name="colorPrimaryDark">@color/colorAccentNight</item>
+    </style>
+
+    <style name="SpinnerDay" parent="Widget.AppCompat.DropDownItem.Spinner">
+        <item name="android:backgroundTint">@color/colorSecondaryDay</item>
+        <item name="android:textColor">@color/colorIconDay</item>
+    </style>
+
+    <style name="SpinnerNight" parent="Widget.AppCompat.DropDownItem.Spinner">
+        <item name="android:backgroundTint">@color/colorSecondaryNight</item>
+        <item name="android:textColor">@color/colorAccentNight</item>
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+    <style name="Animation.MyCustomAnimation" parent="android:style/Animation.Activity">
+        <item name="android:activityOpenEnterAnimation">@anim/slide_from_bottom</item>
+        <item name="android:activityOpenExitAnimation">@anim/slide_stay_bottom</item>
+        <item name="android:activityCloseEnterAnimation">@anim/slide_stay_bottom</item>
+        <item name="android:activityCloseExitAnimation">@anim/slide_to_bottom</item>
+    </style>
+
+</resources>

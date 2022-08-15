@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+                android:id="@+id/nav_inventory"
+                android:icon="@drawable/ic_drawable_inventory"
+                android:title="@string/nav_inventory" />
+        <item
+                android:id="@+id/nav_agency"
+                android:icon="@drawable/ic_drawable_agency"
+                android:title="@string/nav_agency" />
+        <item
+                android:id="@+id/nav_category"
+                android:icon="@drawable/ic_drawable_category"
+                android:title="@string/nav_category" />
+        <item
+                android:id="@+id/nav_device"
+                android:icon="@drawable/ic_drawable_device"
+                android:title="@string/nav_device" />
+        <item
+            android:id="@+id/nav_tag"
+            android:icon="@drawable/ic_drawable_tag"
+            android:title="@string/nav_tag" />
+    </group>
+
+
+    <item android:title="@string/nav_more">
+        <menu>
+            <item
+                    android:id="@+id/nav_dark"
+                    android:icon="@drawable/ic_drawable_dark_mode"
+                    android:title="@string/nav_dark"
+                    app:actionLayout="@layout/adapter_dark_mode" />
+            <item
+                    android:id="@+id/nav_about"
+                    android:icon="@drawable/ic_drawable_about"
+                    android:title="@string/nav_about" />
+            <item
+                    android:id="@+id/nav_exit"
+                    android:icon="@drawable/ic_drawable_exit"
+                    android:title="@string/nav_exit" />
+        </menu>
+    </item>
+
+</menu>

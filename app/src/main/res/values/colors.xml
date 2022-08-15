@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimaryDay">#4DD0E1</color>
+    <color name="colorSecondaryDay">#FFFFFF</color>
+    <color name="colorPrimaryDarkDay">#009FAF</color>
+    <color name="colorAccentDay">#4DD0E1</color>
+    <color name="colorForegroundDay">#4DD0E1</color>
+    <color name="colorCardViewDay">#FFFFFF</color>
+    <color name="colorIconDay">#4D4D4D</color>
+    <color name="colorHintDay">#9E9E9E</color>
+    <color name="colorFabLayout">#797979</color>
+
+    <color name="colorPrimaryNight">#212121</color>
+    <color name="colorSecondaryNight">#272727</color>
+    <color name="colorPrimaryDarkNight">#000000</color>
+    <color name="colorAccentNight">#4DD0E1</color>
+    <color name="colorForegroundNight">#212121</color>
+    <color name="colorCardViewNight">#474747</color>
+    <color name="colorIconNight">#FFFFFF</color>
+    <color name="colorHintNight">#9E9E9E</color>
+</resources>
